@@ -1,57 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login and Register Page</title>
+    <title>Medical Center</title>
     <link rel="stylesheet" href="/LoginRegisterPage/CSS/style.css" />
+    <script src="/LoginRegisterPage/JS/script.js" defer></script>
   </head>
   <body>
     <header>
       <h2 class="logo">Medical Center</h2>
-      <nav class="navigation">
+      <nav>
         <a href="#">Home</a>
-        <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Contacts</a>
-        <button class="btnlogin">Login</button>
+        <a href="#">About</a>
+        <button class="login">Login</button>
       </nav>
     </header>
-
-    <div class="wrapper">
+    <main class="wrapper">
       <span class="icon-close">
         <ion-icon name="close"></ion-icon>
       </span>
-      <div class="box-login">
+
+      <article class="login">
         <h2>Login</h2>
         <form action="#">
-          <div class="input-box">
+          <section class="input-mail">
             <span class="icon"><ion-icon name="mail"></ion-icon></span>
             <input type="email" required />
             <label>Email</label>
-          </div>
-          <div class="input-box">
+          </section>
+          <section class="input-password">
             <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
             <input type="password" required />
             <label>Password</label>
-          </div>
-          <div class="remember-forgot">
+          </section>
+          <section class="remember-forgot">
             <label><input type="checkbox" />Remember me</label>
             <a href="#">Forgot Password?</a>
-          </div>
-          <button type="submit" class="btn">Login</button>
-          <div class="login-register">
+          </section>
+          <button type="submit" class="button-login">Login</button>
+          <section class="footer-login">
             <p>
               Don't have an account?<a href="#" class="register-link"
                 >Register</a
               >
             </p>
-          </div>
+          </section>
         </form>
-      </div>
-    </div>
+      </article>
 
-    <script src="/LoginRegisterPage/JS/script.js"></script>
+      <article class="register">
+        <h2>Registration</h2>
+        <form action="#">
+          <section class="input-name">
+            <span class="icon"><ion-icon name="people"></ion-icon></span>
+            <input type="text" required />
+            <label>Username</label>
+          </section>
+          <section class="input-mail">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required />
+            <label>Email</label>
+          </section>
+          <section class="input-password">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required />
+            <label>Password</label>
+          </section>
+          <section class="remember-forgot">
+            <label
+              ><input type="checkbox" />I agree to the terms & conditions</label
+            >
+          </section>
+          <button type="submit" class="button-register">Register</button>
+          <section class="footer-register">
+            <p>
+              Already have an account?<a href="#" class="login-link">Login</a>
+            </p>
+          </section>
+        </form>
+      </article>
+    </main>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

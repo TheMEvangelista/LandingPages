@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form LoginPage</title>
+    <link rel="stylesheet" href="/DynamicLoginPage/CSS/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="image-section">
+        <div class="image-wrapper">
+          <img src="./Assets/images/background-gradient.png" alt="" />
+        </div>
+        <div class="content-container">
+          <h1 class="text-heading">
+            Only through the education can we change the <span>Word.</span>
+          </h1>
+          <p class="text-paragraph">
+            A small step today makes a big difference in the future.
+          </p>
+        </div>
+      </section>
+      <section class="form-section">
+        <div class="form-wrapper">
+          <h2>Welcome Back!</h2>
+          <p>Enter your credential to acess your account.</p>
+          <div class="input-container">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" autocomplete="off" />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" />
+            </div>
+          </div>
+          <div class="remember-forgot">
+            <div class="remember-me">
+              <input type="checkbox" value="remember-me" id="remember-me" />
+              <label for="remember-me">Remember me</label>
+            </div>
+            <a href="#">Forgot your password?</a>
+          </div>
+          <button class="login-btn">Log In</button>
+          <div class="or-divider">or</div>
+          <button class="google-sign">
+            <object data="./Assets/Svg/Google.svg"></object>
+            <span>Sign in with Google</span>
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
